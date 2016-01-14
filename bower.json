@@ -1,0 +1,24 @@
+{
+  "name": "angular-calendar",
+  "description": "date picker with angular",
+  "main": "index.js",
+  "authors": [
+    "Chaitanya Elavarthi"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angular",
+    "calendar",
+    "learning"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

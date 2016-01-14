@@ -1,0 +1,24 @@
+{
+  "name": "angular-calendar",
+  "version": "1.0.0",
+  "description": "date picker with angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chai85/angular-calendar.git"
+  },
+  "keywords": [
+    "angular",
+    "calendar",
+    "learning"
+  ],
+  "author": "Chaitanya Elavarthi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chai85/angular-calendar/issues"
+  },
+  "homepage": "https://github.com/chai85/angular-calendar#readme"
+}
