@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Collab Tool</title>
 
     <link rel=stylesheet href="app.css">
@@ -29,11 +30,11 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <!--
+                <!--<ul class="nav navbar-nav">
+
                     <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-<li><a href="#">Link</a></li>
--->
+                    <li><a href="#">Link</a></li>
+
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                         <ul class="dropdown-menu">
@@ -46,7 +47,7 @@
                             <li><a href="#">One more separated link</a></li>
                         </ul>
                     </li>
-                </ul>
+                </ul>-->
                 <form class="navbar-form navbar-left" role="search">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search for...">
@@ -57,7 +58,7 @@
                         </span>
                     </div>
                 </form>
-                <ul class="nav navbar-nav navbar-right">
+                <!--<ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Link</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -69,7 +70,7 @@
                             <li><a href="#">Separated link</a></li>
                         </ul>
                     </li>
-                </ul>
+                </ul>-->
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -77,8 +78,8 @@
     </nav>
     <div class="container-fluid text-center collab">
         <div class="row">
-            <div class="col-xs-3">telephone</div>
-            <div class="col-xs-6">
+            <!--            <div class="col-xs-3">telephone</div>-->
+            <div class="col-xs-9">
 
                 <ul class="list-group text-left">
                     <li class="list-group-item"><span class="label label-default">12:00:00</span> Flight created in ODS</li>
@@ -94,6 +95,7 @@
                                         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                           Weight Restriction
                                         </a>
+                                        <span class="btn btn-default btn-sm">initiate discussion for this event</span>
                                     </h4>
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
@@ -122,12 +124,50 @@
             <div class="col-xs-3 contacts">
                 <h3>Contacts</h3>
                 <ul class="list-group text-left">
-                    <li class="list-group-item"> Dapibus ac facilisis <span class="label label-success">Router</span><span class="glyphicon glyphicon-phone-alt phone-icon pull-right"></span> <span class="glyphicon glyphicon-comment comment-icon pull-right"></span></li>
-                    <li class="list-group-item"> Dapibus ac facilisis <span class="label label-primary">Load Planner</span><span class="glyphicon glyphicon-phone-alt phone-icon pull-right"></span> <span class="glyphicon glyphicon-comment comment-icon pull-right"></span></li>
-                    <li class="list-group-item"> Morbi leo risus <span class="label label-warning">Dispatch</span><span class="glyphicon glyphicon-phone-alt phone-icon pull-right"></span> <span class="glyphicon glyphicon-comment comment-icon pull-right"></span></li>
-                    <li class="list-group-item"> Morbi leo risus <span class="label label-danger">OM</span><span class="glyphicon glyphicon-phone-alt phone-icon pull-right"></span> <span class="glyphicon glyphicon-comment comment-icon pull-right"></span></li>
-                    <li class="list-group-item"> Vestibulum at eros <span class="label label-default">ND</span><span class="glyphicon glyphicon-phone-alt phone-icon pull-right"></span> <span class="glyphicon glyphicon-comment comment-icon pull-right"></span></li>
-                    <li class="list-group-item"> Vestibulum at eros <span class="label label-info">Crew</span><span class="glyphicon glyphicon-phone-alt phone-icon pull-right"></span> <span class="glyphicon glyphicon-comment comment-icon pull-right"></span></li>
+                    <li class="list-group-item row">
+                        <div class="col-xs-5">Dapibus ac facilisis</div>
+                        <div class="col-xs-1"><span class="glyphicon glyphicon-phone-alt phone-icon"></span></div>
+                        <div class="col-xs-1"><span class="glyphicon glyphicon-comment comment-icon"></span></div>
+                        <div class="col-xs-3"><span class="label label-success">Router</span></div>
+                    </li>
+
+                    <li class="list-group-item row">
+                        <div class="col-xs-5">Lorem ipsum.</div>
+                        <div class="col-xs-1"><span class="glyphicon glyphicon-phone-alt phone-icon"></span></div>
+                        <div class="col-xs-1"><span class="glyphicon glyphicon-comment comment-icon"></span></div>
+                        <div class="col-xs-3"><span class="label label-info">Load Planner</span></div>
+                    </li>
+                    <li class="list-group-item row">
+                        <div class="col-xs-5">Lorem ipsum dolor.</div>
+                        <div class="col-xs-1"><span class="glyphicon glyphicon-phone-alt phone-icon"></span></div>
+                        <div class="col-xs-1"><span class="glyphicon glyphicon-comment comment-icon"></span></div>
+                        <div class="col-xs-3"><span class="label label-warning">ND</span></div>
+                    </li>
+                    <li class="list-group-item row">
+                        <div class="col-xs-5"><em>Lorem ipsum.</em></div>
+                        <div class="col-xs-1"><span class="glyphicon glyphicon-phone-alt phone-icon"></span></div>
+                        <div class="col-xs-1"><span class="glyphicon glyphicon-comment comment-icon"></span></div>
+                        <div class="col-xs-3"><span class="label label-danger">Crew</span></div>
+                    </li>
+                    <li class="list-group-item row">
+                        <div class="col-xs-5"><em>Lorem ipsum.</em></div>
+                        <div class="col-xs-1"><span class="glyphicon glyphicon-phone-alt phone-icon"></span></div>
+                        <div class="col-xs-1"><span class="glyphicon glyphicon-comment comment-icon"></span></div>
+                        <div class="col-xs-3"><span class="label label-success text-justify">OM</span></div>
+                    </li>
+                    <li class="list-group-item row">
+                        <div class="col-xs-5">Lorem ipsum dolor.</div>
+                        <div class="col-xs-1"><span class="glyphicon glyphicon-phone-alt phone-icon"></span></div>
+                        <div class="col-xs-1"><span class="glyphicon glyphicon-comment comment-icon"></span></div>
+                        <div class="col-xs-3"><span class="label label-success">Ramp</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item row">
+                        <div class="col-xs-5">Lorem.</div>
+                        <div class="col-xs-1"><span class="glyphicon glyphicon-phone-alt phone-icon"></span></div>
+                        <div class="col-xs-1"><span class="glyphicon glyphicon-comment comment-icon"></span></div>
+                        <div class="col-xs-3"><span class="label label-info">Pilot</span></div>
+                    </li>
                 </ul>
             </div>
         </div>
