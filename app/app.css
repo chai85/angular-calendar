@@ -1,0 +1,35 @@
+/* line 3, /Users/chaitanya/code/angular-calendar/app/app.scss */
+.phone {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background-color: #eee;
+  left: 0px; }
+
+/* line 11, /Users/chaitanya/code/angular-calendar/app/app.scss */
+.contacts {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background-color: #eee;
+  right: 0px; }
+
+/* line 19, /Users/chaitanya/code/angular-calendar/app/app.scss */
+.activity {
+  height: 300px; }
+
+/* line 23, /Users/chaitanya/code/angular-calendar/app/app.scss */
+.controls {
+  height: 300px; }
+
+/* line 27, /Users/chaitanya/code/angular-calendar/app/app.scss */
+.phone-icon {
+  cursor: pointer;
+  padding-right: 3px; }
+
+/* line 32, /Users/chaitanya/code/angular-calendar/app/app.scss */
+.comment-icon {
+  cursor: pointer;
+  padding-right: 3px; }
+
+/*# sourceMappingURL=app.css.map */
