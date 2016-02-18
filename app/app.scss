@@ -18,8 +18,18 @@
     padding-right: 3px;
 }
 
-.list-group-special .list-group-item {
-    padding: 5px 0;
+.list-group-special {
+    .list-group-item {
+        padding: 5px 0;
+    }
+    .email,
+    .phone {
+        padding: 0;
+        margin: 0;
+        color: darkcyan;
+        font-size: 0.9em;
+        font-family: monospace;
+    }
 }
 
 .collab > .row {
@@ -27,7 +37,11 @@
 }
 
 body {
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
     font-size: 12px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
 }
 
 .contacts {

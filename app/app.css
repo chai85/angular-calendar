@@ -19,27 +19,40 @@
   cursor: pointer;
   padding-right: 3px; }
 
-/* line 21, C:/Users/n083382/Downloads/Collab/app/app.scss */
+/* line 22, C:/Users/n083382/Downloads/Collab/app/app.scss */
 .list-group-special .list-group-item {
   padding: 5px 0; }
 
-/* line 25, C:/Users/n083382/Downloads/Collab/app/app.scss */
+/* line 26, C:/Users/n083382/Downloads/Collab/app/app.scss */
+.list-group-special .email,
+.list-group-special .phone {
+  padding: 0;
+  margin: 0;
+  color: darkcyan;
+  font-size: 0.9em;
+  font-family: monospace; }
+
+/* line 35, C:/Users/n083382/Downloads/Collab/app/app.scss */
 .collab > .row {
   padding: 0px; }
 
-/* line 29, C:/Users/n083382/Downloads/Collab/app/app.scss */
+/* line 39, C:/Users/n083382/Downloads/Collab/app/app.scss */
 body {
-  font-size: 12px; }
+  font-family: Segoe UI, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff; }
 
-/* line 34, C:/Users/n083382/Downloads/Collab/app/app.scss */
+/* line 48, C:/Users/n083382/Downloads/Collab/app/app.scss */
 .contacts .list-inline {
   margin: 0px; }
 
-/* line 37, C:/Users/n083382/Downloads/Collab/app/app.scss */
+/* line 51, C:/Users/n083382/Downloads/Collab/app/app.scss */
 .contacts .checkbox-div {
   margin: -3px 0 0 0; }
 
-/* line 40, C:/Users/n083382/Downloads/Collab/app/app.scss */
+/* line 54, C:/Users/n083382/Downloads/Collab/app/app.scss */
 .contacts .contacts-header {
   margin: 5px 0 0 0; }
 
