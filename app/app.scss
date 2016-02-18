@@ -1,27 +1,11 @@
-
-
-.phone {
-    position: fixed;
-    width: 300px;
-    height: 100%;
-    background-color: #eee;
-    left: 0px;
-}
-
-.contacts {
-    position: fixed;
-    width: 300px;
-    height: 100%;
-    background-color: #eee;
-    right: 0px;
-}
-
-.activity {
-    height: 300px;
-}
-
+.contacts,
+.events,
+.activity,
 .controls {
-    height: 300px;
+    & .panel-body {
+        height: 250px;
+        overflow-y: scroll;
+    }
 }
 
 .phone-icon {
@@ -32,4 +16,17 @@
 .comment-icon {
     cursor: pointer;
     padding-right: 3px;
+}
+
+.list-group-special .list-group-item {
+    border: 0px;
+    padding: 5px;
+}
+
+.collab>.row {
+    padding: 0px;
+}
+
+body {
+    font-size: 12px;
 }

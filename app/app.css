@@ -1,35 +1,32 @@
-/* line 3, /Users/chaitanya/code/angular-calendar/app/app.scss */
-.phone {
-  position: fixed;
-  width: 300px;
-  height: 100%;
-  background-color: #eee;
-  left: 0px; }
+/* line 5, /Users/chaitanya/code/angular-calendar/app/app.scss */
+.contacts .panel-body,
+.events .panel-body,
+.activity .panel-body,
+.controls .panel-body {
+  height: 250px;
+  overflow-y: scroll; }
 
 /* line 11, /Users/chaitanya/code/angular-calendar/app/app.scss */
-.contacts {
-  position: fixed;
-  width: 300px;
-  height: 100%;
-  background-color: #eee;
-  right: 0px; }
-
-/* line 19, /Users/chaitanya/code/angular-calendar/app/app.scss */
-.activity {
-  height: 300px; }
-
-/* line 23, /Users/chaitanya/code/angular-calendar/app/app.scss */
-.controls {
-  height: 300px; }
-
-/* line 27, /Users/chaitanya/code/angular-calendar/app/app.scss */
 .phone-icon {
   cursor: pointer;
   padding-right: 3px; }
 
-/* line 32, /Users/chaitanya/code/angular-calendar/app/app.scss */
+/* line 16, /Users/chaitanya/code/angular-calendar/app/app.scss */
 .comment-icon {
   cursor: pointer;
   padding-right: 3px; }
+
+/* line 21, /Users/chaitanya/code/angular-calendar/app/app.scss */
+.list-group-special .list-group-item {
+  border: 0px;
+  padding: 5px; }
+
+/* line 26, /Users/chaitanya/code/angular-calendar/app/app.scss */
+.collab > .row {
+  padding: 0px; }
+
+/* line 30, /Users/chaitanya/code/angular-calendar/app/app.scss */
+body {
+  font-size: 12px; }
 
 /*# sourceMappingURL=app.css.map */
