@@ -2,9 +2,9 @@
 .events,
 .activity,
 .controls {
-    & .panel-body {
-        height: 250px;
-        overflow-y: scroll;
+    & .panel-body,
+    .list-group {
+        overflow: auto;
     }
 }
 
@@ -19,14 +19,25 @@
 }
 
 .list-group-special .list-group-item {
-    border: 0px;
-    padding: 5px;
+    padding: 5px 0;
 }
 
-.collab>.row {
+.collab > .row {
     padding: 0px;
 }
 
 body {
     font-size: 12px;
+}
+
+.contacts {
+    .list-inline {
+        margin: 0px;
+    }
+    .checkbox-div {
+        margin: -3px 0 0 0;
+    }
+    .contacts-header {
+        margin: 5px 0 0 0;
+    }
 }

@@ -1,6 +1,6 @@
 {
-  "name": "angular-calendar",
-  "description": "date picker with angular",
+  "name": "collab",
+  "description": "---",
   "main": "index.js",
   "authors": [
     "Chaitanya Elavarthi"
@@ -8,11 +8,10 @@
   "license": "ISC",
   "keywords": [
     "angular",
-    "calendar",
-    "learning"
+    "collab"
   ],
   "moduleType": [],
-  "homepage": "",
+  "homepage": "https://github.com/chai85/angular-calendar",
   "private": true,
   "ignore": [
     "**/.*",

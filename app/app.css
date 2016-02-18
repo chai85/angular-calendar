@@ -1,32 +1,46 @@
-/* line 5, /Users/chaitanya/code/angular-calendar/app/app.scss */
+/* line 6, C:/Users/n083382/Downloads/Collab/app/app.scss */
 .contacts .panel-body,
+.contacts .list-group,
 .events .panel-body,
+.events .list-group,
 .activity .panel-body,
-.controls .panel-body {
-  height: 250px;
-  overflow-y: scroll; }
+.activity .list-group,
+.controls .panel-body,
+.controls .list-group {
+  overflow: auto; }
 
-/* line 11, /Users/chaitanya/code/angular-calendar/app/app.scss */
+/* line 11, C:/Users/n083382/Downloads/Collab/app/app.scss */
 .phone-icon {
   cursor: pointer;
   padding-right: 3px; }
 
-/* line 16, /Users/chaitanya/code/angular-calendar/app/app.scss */
+/* line 16, C:/Users/n083382/Downloads/Collab/app/app.scss */
 .comment-icon {
   cursor: pointer;
   padding-right: 3px; }
 
-/* line 21, /Users/chaitanya/code/angular-calendar/app/app.scss */
+/* line 21, C:/Users/n083382/Downloads/Collab/app/app.scss */
 .list-group-special .list-group-item {
-  border: 0px;
-  padding: 5px; }
+  padding: 5px 0; }
 
-/* line 26, /Users/chaitanya/code/angular-calendar/app/app.scss */
+/* line 25, C:/Users/n083382/Downloads/Collab/app/app.scss */
 .collab > .row {
   padding: 0px; }
 
-/* line 30, /Users/chaitanya/code/angular-calendar/app/app.scss */
+/* line 29, C:/Users/n083382/Downloads/Collab/app/app.scss */
 body {
   font-size: 12px; }
+
+/* line 34, C:/Users/n083382/Downloads/Collab/app/app.scss */
+.contacts .list-inline {
+  margin: 0px; }
+
+/* line 37, C:/Users/n083382/Downloads/Collab/app/app.scss */
+.contacts .checkbox-div {
+  margin: -3px 0 0 0; }
+
+/* line 40, C:/Users/n083382/Downloads/Collab/app/app.scss */
+.contacts .contacts-header {
+  margin: 5px 0 0 0; }
 
 /*# sourceMappingURL=app.css.map */
