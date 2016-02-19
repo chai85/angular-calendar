@@ -13,7 +13,7 @@
 
 </head>
 
-<body ng-app="CalendarApp">
+<body ng-app="CollabApp">
 
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -48,7 +48,7 @@
     <div class="container-fluid text-center collab">
         <div class="row">
             <!--            <div class="col-xs-3">telephone</div>-->
-            <div class="col-xs-8 activity">
+            <div class="col-lg-9 activity">
 
                 <div class="list-group">
                     <a href="#" class="list-group-item">
@@ -63,50 +63,68 @@
                     </a>
                 </div>
             </div>
-            <div class="col-xs-4 contacts">
-                <div class="panel panel-info">
+            <div class="col-lg-3 contacts" ng-controller="ContactsController">
+                <div class="panel panel-default">
 
                     <div class="panel-heading">
-                        <h3 class="panel-title">Contats</h3>
+                        <ul class="list-inline">
+                            <li class="pull-left contacts-header">
+                                <span class="h4 text-left text-capitalize">Contacts</span>
+                            </li>
+                            <li class="pull-right btn-group" role="button">
+                                <button type="button" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-comment comment-icon"></span> Chat</button>
+                                <button type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-phone-alt phone-icon"></span> Start Bridge</button>
+                            </li>
+                            <div class="clearfix"></div>
+                        </ul>
                     </div>
 
-                    <div class="panel-body">
-                        <ul class="list-group text-left list-group-special">
-                            <li class="list-group-item row">
-                                <div class="col-xs-1">
-                                    <input type="checkbox">
-                                </div>
-                                <div class="col-xs-5">Dapibus ac facilisis</div>
-                                <div class="col-xs-1"><span class="glyphicon glyphicon-phone-alt phone-icon"></span></div>
-                                <div class="col-xs-1"><span class="glyphicon glyphicon-comment comment-icon"></span></div>
-                                <div class="col-xs-3"><span class="label label-success">Load Planner</span></div>
-                            </li>
-
-                            <li class="list-group-item row">
-                                <div class="col-xs-1">
-                                    <input type="checkbox">
-                                </div>
-                                <div class="col-xs-5">Lorem ipsum.</div>
-                                <div class="col-xs-1"><span class="glyphicon glyphicon-phone-alt phone-icon"></span></div>
-                                <div class="col-xs-1"><span class="glyphicon glyphicon-comment comment-icon"></span></div>
-                                <div class="col-xs-3"><span class="label label-warning">Dispatcher</span></div>
-                            </li>
-                            <li class="list-group-item row">
-                                <div class="col-xs-1">
-                                    <input type="checkbox">
-                                </div>
-                                <div class="col-xs-5">Lorem.</div>
-                                <div class="col-xs-1"><span class="glyphicon glyphicon-phone-alt phone-icon"></span></div>
-                                <div class="col-xs-1"><span class="glyphicon glyphicon-comment comment-icon"></span></div>
-                                <div class="col-xs-3"><span class="label label-info">Ramp agent</span></div>
-                            </li>
-                        </ul>
+                    <div class="list-group text-left list-group-special">
+                        <a class="list-group-item">
+                            <div class="col-xs-1 checkbox-div">
+                                <input type="checkbox">
+                            </div>
+                            <div class="col-xs-5"><span>Dapibus ac facilisis</span>
+                                <p class="phone"><abbr title="Phone Number">P:</abbr> (000) 000-0000</p>
+                                <p class="email"><abbr title="E-mail address">E:</abbr> xxx@united.com</p>
+                            </div>
+                            <div class="col-xs-1"><span class="glyphicon glyphicon-phone-alt phone-icon"></span></div>
+                            <div class="col-xs-1"><span class="glyphicon glyphicon-comment comment-icon"></span></div>
+                            <div class="col-xs-3"><span class="label label-success">Load Planner</span></div>
+                            <div class="clearfix"></div>
+                        </a>
+                        <a class="list-group-item">
+                            <div class="col-xs-1 checkbox-div">
+                                <input type="checkbox">
+                            </div>
+                            <div class="col-xs-5"><span>Lorem ipsum.</span>
+                                <p class="phone"><abbr title="Phone Number">P:</abbr> (000) 000-0000</p>
+                                <p class="email"><abbr title="E-mail address">E:</abbr> xxx@united.com</p>
+                            </div>
+                            <div class="col-xs-1"><span class="glyphicon glyphicon-phone-alt phone-icon"></span></div>
+                            <div class="col-xs-1"><span class="glyphicon glyphicon-comment comment-icon"></span></div>
+                            <div class="col-xs-3"><span class="label label-warning">Dispatcher</span></div>
+                            <div class="clearfix"></div>
+                        </a>
+                        <a class="list-group-item">
+                            <div class="col-xs-1 checkbox-div">
+                                <input type="checkbox">
+                            </div>
+                            <div class="col-xs-5"><span>Lorem.</span>
+                                <p class="phone"><abbr title="Phone Number">P:</abbr> (000) 000-0000</p>
+                                <p class="email"><abbr title="E-mail address">E:</abbr> xxx@united.com</p>
+                            </div>
+                            <div class="col-xs-1"><span class="glyphicon glyphicon-phone-alt phone-icon"></span></div>
+                            <div class="col-xs-1"><span class="glyphicon glyphicon-comment comment-icon"></span></div>
+                            <div class="col-xs-3"><span class="label label-info">Ramp agent</span></div>
+                            <div class="clearfix"></div>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-8 controls">
+            <div class="col-lg-9 controls">
                 <ul class="nav nav-tabs">
                     <li role="presentation" class="active"><a href="#">FLIFO</a></li>
                     <li role="presentation"><a href="#">Crew</a></li>
@@ -114,8 +132,8 @@
                     <li role="presentation"><a href="#">History</a></li>
                 </ul>
             </div>
-            <div class="col-xs-4 events">
-                <div class="panel panel-danger">
+            <div class="col-lg-3 events">
+                <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">Live events</h3>
                     </div>
