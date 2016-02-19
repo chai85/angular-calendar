@@ -12,4 +12,9 @@ angular.module('CollabApp', [])
         }
         resize();
         $(window).on("resize", resize);
+
+        $('.flifoTabs a').click(function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+        })
     }]);
