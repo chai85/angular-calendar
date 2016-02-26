@@ -56,4 +56,14 @@ body {
 .contacts .contacts-header {
   margin: 5px 0 0 0; }
 
+/* line 59, C:/Users/n083382/Downloads/Collab/app/app.scss */
+div.chat-window {
+  width: 300px;
+  height: 400px;
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  right: 10px;
+  border: solid #337ab7 1px; }
+
 /*# sourceMappingURL=app.css.map */

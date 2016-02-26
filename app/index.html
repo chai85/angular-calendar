@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <link rel=stylesheet href="app.css">
+    <link rel="stylesheet" href="../bower_components/angular-bootstrap-simple-chat/src/css/style.css">
+    <link rel="stylesheet" href="../bower_components/angular-bootstrap-simple-chat/src/css/themes.css">
 
 </head>
 
@@ -45,6 +47,12 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+
+    <div ng-controller="ShellController as vm">
+        <irontec-simple-chat messages="vm.messages" username="vm.username" input-placeholder-text="You can write here" submit-button-text="Send" title="{{vm.title}}" theme="material" submit-function="vm.sendMessage" visible="vm.visible" expand-on-new="vm.expandOnNew">
+        </irontec-simple-chat>
+    </div>
+
     <div class="container-fluid text-center collab">
         <div class="row">
             <!--            <div class="col-xs-3">telephone</div>-->
@@ -71,9 +79,9 @@
                             <li class="pull-left contacts-header">
                                 <span class="h4 text-left text-capitalize">Contacts</span>
                             </li>
-                            <li class="pull-right btn-group" role="button">
-                                <button type="button" class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-comment comment-icon"></span> Chat</button>
-                                <button type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-phone-alt phone-icon"></span> Start Bridge</button>
+                            <li class="pull-right">
+                                <button type="button" role="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-comment comment-icon"></span> Chat</button>
+                                <button type="button" role="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-phone-alt phone-icon"></span> Start Bridge</button>
                             </li>
                             <div class="clearfix"></div>
                         </ul>
@@ -172,11 +180,19 @@
 
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 
+    <script src="../bower_components/lodash/dist/lodash.js"></script>
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-    <script src="/bower_components/angular/angular.js"></script>
+    <!-- Dependencies -->
+    <script src="../bower_components/angular/angular.js"></script>
+
+    <!-- Simple Chat -->
+    <script src="../bower_components/angular-bootstrap-simple-chat/src/scripts/index.js"></script>
+
     <script src="app.js"></script>
+
 </body>
 
 </html>

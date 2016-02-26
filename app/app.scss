@@ -55,3 +55,13 @@ body {
         margin: 5px 0 0 0;
     }
 }
+
+div.chat-window {
+    width: 300px;
+    height: 400px;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 10px;
+    border: solid #337ab7 1px;
+}
